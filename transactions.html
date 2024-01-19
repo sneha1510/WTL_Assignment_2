@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #0e0e0e;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, select, button {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+    <title>Library Management System - Transactions</title>
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="transactions.html">Transactions</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Library Transactions</h2>
+
+        <table>
+            <tr>
+                <th>Transaction ID</th>
+                <th>User ID</th>
+                <th>Book ID</th>
+                <th>Date Borrowed</th>
+                <th>Date Returned</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>001</td>
+                <td>101</td>
+                <td>2024-01-01</td>
+                <td>2024-01-15</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>002</td>
+                <td>102</td>
+                <td>2024-02-01</td>
+                <td>2024-02-10</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </table>
+
+        <br>
+        <form style="text-align: center;">
+            <h2></h2>
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" name="userId" placeholder="Enter user ID">
+            &nbsp;
+            <label for="bookId">Book ID:</label>
+            <input type="text" id="bookId" name="bookId" placeholder="Enter book ID">
+            <br>
+            <label for="dateBorrowed">Date Borrowed:</label>
+            <input type="date" id="dateBorrowed" name="dateBorrowed">
+            &nbsp;
+            <label for="dateReturned">Date Returned:</label>
+            <input type="date" id="dateReturned" name="dateReturned">
+              <br>
+            <button type="submit">Add Transaction</button>
+        </form>
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Library Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
